@@ -1,5 +1,13 @@
+These instructions will be used to install the accelerated app along with SRIOV app
+
 cd /home/deployer
+
+This step will look for the current version of accelerated-bridge-cin-daemonset
+
 grep -R accelerated-bridge-cin-daemonset.yaml .
+
+This command will create and install the accelerated bridge-cni-daemonset
+
 kubectl create -f ./images/k8s-v1.16/accelerated-bridge-cni-daemonset.yaml
 
 
